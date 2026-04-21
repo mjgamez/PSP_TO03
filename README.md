@@ -51,6 +51,8 @@ Ejemplo de respuesta:
 ```
 
 ![Ejemplo de respuesta json](https://raw.githubusercontent.com/mjgamez/imagenes/main/respuesta_json.jpg)
+
+
 **Ejemplo de respuesta json**
 ---
 
