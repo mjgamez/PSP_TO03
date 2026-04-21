@@ -54,6 +54,7 @@ Ejemplo de respuesta:
 
 
 **Ejemplo de respuesta json**
+
 ---
 
 ### Pantallas
