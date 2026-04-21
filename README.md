@@ -5,11 +5,13 @@ Puedes ver el html sobre el proceso de instalación aquí:
 
 [Ver Ejercicio 1](https://mjgamez.github.io/PSP_TO03/Ejercicio1_Servidor/index.html)
 
+
 ## Ejercicio 2: Conversor de Moneda EUR/USD
 
 Aplicación Android que descarga al iniciarse el tipo de cambio actual entre euro y dólar desde una API pública y lo utiliza para realizar conversiones en ambas direcciones. La interfaz cuenta con una imagen decorativa descargada de Internet con la librería Glide.
 
 ---
+
 
 ### Tecnologías utilizadas
 
@@ -26,6 +28,7 @@ El proyecto está desarrollado en **Kotlin**, el lenguaje oficial de Android.
 - **runOnUiThread** permite actualizar la interfaz de usuario desde el callback de red de OkHttp, que se ejecuta en un hilo secundario.
 
 ---
+
 
 ### API utilizada
 
@@ -52,10 +55,10 @@ Ejemplo de respuesta:
 
 ![Ejemplo de respuesta json](https://raw.githubusercontent.com/mjgamez/imagenes/main/respuesta_json.jpg)
 
-
 **Ejemplo de respuesta json**
 
 ---
+
 
 ### Pantallas
 
@@ -78,6 +81,7 @@ Pantalla única con todos los elementos de la conversión:
 Al ganar el foco un campo, el campo contrario se limpia automáticamente para evitar ambigüedad en la dirección de la conversión.
 
 ---
+
 
 ### Flujo de la aplicación
 
@@ -107,6 +111,7 @@ Usuario pulsa "Convertir"
 
 ---
 
+
 ### Dependencias (build.gradle)
 
 ```kotlin
@@ -119,11 +124,13 @@ implementation("com.github.bumptech.glide:glide:4.16.0")
 
 ---
 
+
 ### Permisos necesarios en AndroidManifest.xml
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
+
 
 
 ## Ejercicio 3: Estaciones Bizi Zaragoza
@@ -150,6 +157,7 @@ El proyecto está desarrollado en **Kotlin**, el lenguaje oficial de Android.
 
 ---
 
+
 ### Modelo de datos
 
 La API devuelve un JSON cuya raíz contiene la clave `result` con el listado de estaciones:
@@ -172,6 +180,7 @@ data class EstacionBizi(
 `EstacionBizi` implementa `Serializable` para poder pasarse entre fragmentos mediante `Bundle`.
 
 ---
+
 
 ### Pantallas
 
@@ -207,6 +216,7 @@ Vista de detalle de la estación seleccionada. Muestra:
 
 ---
 
+
 ### Estructura del proyecto
 
 ```
@@ -226,7 +236,8 @@ com.mariajosegamez.psp_to03
 
 ---
 
-## Flujo de la aplicación
+
+### Flujo de la aplicación
 
 ```
 App arranca → Ejercicio3Activity
@@ -256,7 +267,8 @@ FragmentDetalle.onViewCreated()
 
 ---
 
-## Dependencias (build.gradle)
+
+### Dependencias (build.gradle)
 
 ```kotlin
 // Retrofit + Gson
@@ -270,7 +282,8 @@ implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
 ---
 
-## Permisos necesarios en AndroidManifest.xml
+
+### Permisos necesarios en AndroidManifest.xml
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -278,7 +291,8 @@ implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
 ---
 
-## API utilizada
+
+### API utilizada
 
 **Open Data Zaragoza — Estaciones Bicicleta Bizi**
 
