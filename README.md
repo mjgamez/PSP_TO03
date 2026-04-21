@@ -1,3 +1,10 @@
+
+## Ejercicio 1: Instalación Servidor VPS
+
+Puedes ver el html sobre el proceso de instalación aquí: 
+
+[Ver Ejercicio 1](https://mjgamez.github.io/PSP_TO03/Ejercicio1_Servidor/index.html)
+
 ## Ejercicio 2: Conversor de Moneda EUR/USD
 
 Aplicación Android que descarga al iniciarse el tipo de cambio actual entre euro y dólar desde una API pública y lo utiliza para realizar conversiones en ambas direcciones. La interfaz cuenta con una imagen decorativa descargada de Internet con la librería Glide.
